@@ -1,0 +1,66 @@
+{
+  "extends": ["react-app", "react-app/jest", "prettier", "eslint:recommended", "eslint-config-prettier"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "quotes": [
+          "error",
+          "single",
+          {
+            "avoidEscape": true
+          }
+        ],
+        "no-console": "warn",
+        "indent": [
+          "warn",
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
+        "no-unused-vars": [
+          "warn",
+          {
+            "vars": "all",
+            "args": "none",
+            "ignoreRestSiblings": false
+          }
+        ],
+        "jsx-quotes": ["warn", "prefer-double"],
+        "prefer-const": "error",
+        "max-len": [
+          "error",
+          {
+            "code": 120,
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true,
+            "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("
+          }
+        ],
+        "semi": ["warn", "always"],
+        "import/order": [
+          "warn",
+          {
+            "groups": ["type", "builtin", "external", "internal", "parent", "sibling", "index", "object"],
+            "newlines-between": "always-and-inside-groups"
+          }
+        ],
+        "no-extra-boolean-cast": "off",
+        "import/no-anonymous-default-export": [
+          2,
+          {
+            "allowObject": true
+          }
+        ]
+      }
+    }
+  ],
+  "globals": {
+    "React": true,
+    "JSX": true,
+    "NodeListOf": true
+  }
+}
