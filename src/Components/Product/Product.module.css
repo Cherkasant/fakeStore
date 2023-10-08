@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.container:hover {
+  cursor: pointer;
+  background-color: grey;
+  opacity: 0.75;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 24px;
+  color: #0e4298;
+  display: flex;
+}

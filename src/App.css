@@ -1,5 +1,11 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-logo {
