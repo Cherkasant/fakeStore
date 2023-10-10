@@ -1,4 +1,5 @@
 .inputs {
+  min-height: 180px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -6,8 +7,12 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 320px;
+  height: 340px;
   background-color: #fdfdfd;
   padding: 20px;
   margin: 0 auto;
@@ -21,6 +26,7 @@
 .inputContainer {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .label {
@@ -71,4 +77,15 @@
   color: #fff;
   background-color: #df405a;
   border: 1px #df405a solid;
+}
+
+.btn:disabled {
+  background: #d9e1f0;
+  color: #9bacc9;
+  pointer-events: none;
+}
+
+.error {
+  color: #bf3535;
+  font-size: 12px;
 }

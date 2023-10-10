@@ -8,7 +8,7 @@ const PagesWrapper = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>Catalogue</div>
-      <div>{pathname === PathNames.Home ? <Catalog /> : <Outlet />}</div>
+      <div className={styles.innerContainer}>{pathname === PathNames.Home ? <Catalog /> : <Outlet />}</div>
     </div>
   );
 };
