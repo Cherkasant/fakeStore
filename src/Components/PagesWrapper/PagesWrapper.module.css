@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -11,4 +12,11 @@
   font-size: 32px;
   line-height: 48px;
   color: #000000;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

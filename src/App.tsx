@@ -4,6 +4,8 @@ import Router from './Pages/Router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Provider } from 'react-redux';
 import { store } from './Redux/store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const queryClient = new QueryClient();
 
@@ -12,6 +14,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="App">
         <Router />
+        <ToastContainer position="bottom-right" autoClose={7000} />
       </div>
     </QueryClientProvider>
   );

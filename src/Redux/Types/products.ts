@@ -8,3 +8,11 @@ export type ProductType = {
 };
 
 export type ProductsListType = Array<ProductType>;
+
+export type PostProduct = {
+  title: string;
+  price: number;
+  description: string;
+  image: string;
+  category: string;
+};
