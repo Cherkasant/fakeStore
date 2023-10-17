@@ -18,7 +18,7 @@ const Form = () => {
       username: z.string().min(1, { message: 'Username is required' }),
       password: z.string().min(4, { message: ' Password must be at least 4 characters' })
     })
-    .partial();
+    .required();
   type Person = z.infer<typeof personSchema>;
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -41,7 +41,6 @@ const Form = () => {
     register,
     clearErrors,
     handleSubmit,
-    watch,
     formState: { errors, isDirty, isSubmitting },
     reset
   } = useForm<Person>({

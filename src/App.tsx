@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { store } from './Redux/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AuthProvider from './Components/AuthProvider';
 
 const queryClient = new QueryClient();
 
@@ -23,7 +24,9 @@ function App() {
 const AppWithStore = () => {
   return (
     <Provider store={store}>
-      <App />
+      <AuthProvider>
+        <App />
+      </AuthProvider>
     </Provider>
   );
 };

@@ -5,12 +5,6 @@ import { useProduct } from '../../Hooks/useProduct/useProduct';
 
 const ProductPage = () => {
   const { id } = useParams();
-  // const [productId, setProductId] = useState('');
-  // useEffect(() => {
-  //   if (id) {
-  //     setProductId(id);
-  //   }
-  // }, [id]);
 
   const { isLoading, error, data } = useProduct(+id!);
   if (isLoading)

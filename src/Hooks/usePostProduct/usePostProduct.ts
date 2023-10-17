@@ -1,9 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import { addNewProduct } from '../../Redux/utils/api';
+import { PostProduct } from '../../Redux/Types/products';
 
-export function usePostProduct(id: number) {
+export function usePostProduct(data: PostProduct) {
   return useQuery({
-    queryKey: ['usePostProduct', id],
-    queryFn: () => addNewProduct({ title: '', category: '', description: '', price: 1, image: '' })
+    queryKey: ['usePostProduct'],
+    queryFn: () => addNewProduct(data),
+    enabled: false
   });
 }

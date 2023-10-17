@@ -5,7 +5,7 @@
       "files": ["*.ts", "*.tsx"],
       "rules": {
         "quotes": [
-          "error",
+          "warn",
           "single",
           {
             "avoidEscape": true

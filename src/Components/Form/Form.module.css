@@ -12,7 +12,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 320px;
-  height: 340px;
   background-color: #fdfdfd;
   padding: 20px;
   margin: 0 auto;
@@ -67,7 +66,7 @@
   color: #fff;
   line-height: 40px;
   text-align: center;
-  background-color: #87314e;
+  background-color: green;
   border: 1px #87314e solid;
   opacity: 1;
   cursor: pointer;
@@ -88,4 +87,13 @@
 .error {
   color: #bf3535;
   font-size: 12px;
+}
+
+.activeModal {
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.btnCancel {
+  background-color: red;
 }
